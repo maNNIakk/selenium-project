@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a5d7b44-7eed-43e2-91d3-a5eee28f0490" name="Changes" comment="" />
+    <list default="true" id="4a5d7b44-7eed-43e2-91d3-a5eee28f0490" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,7 +53,7 @@
       <recent name="C:\Users\renat\OneDrive\Área de Trabalho\Backup\Projects\selenium-project\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TesteCampoTreinamento.valoresMultiCombo">
     <configuration name="TesteCampoTreinamento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
@@ -61,6 +65,38 @@
       <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
       <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.TesteCampoTreinamento" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteCampoTreinamento.deveInteragirComCheckBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.seleniumproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.TesteCampoTreinamento" />
+      <option name="METHOD_NAME" value="deveInteragirComCheckBox" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteCampoTreinamento.deveInteragirComCombo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.seleniumproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.TesteCampoTreinamento" />
+      <option name="METHOD_NAME" value="deveInteragirComCombo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteCampoTreinamento.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesteCampoTreinamento.valoresMultiCombo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
@@ -91,33 +127,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
       <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.TesteCampoTreinamento" />
-      <option name="METHOD_NAME" value="teste" />
+      <option name="METHOD_NAME" value="valoresMultiCombo" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteGoogle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.TesteGoogle" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TesteCampoTreinamento.deveInteragirComRadio" />
+        <item itemvalue="JUnit.TesteCampoTreinamento.valoresMultiCombo" />
         <item itemvalue="JUnit.TesteCampoTreinamento" />
-        <item itemvalue="JUnit.TesteCampoTreinamento.teste" />
-        <item itemvalue="JUnit.TesteGoogle" />
+        <item itemvalue="JUnit.TesteCampoTreinamento.deveInteragirComRadio" />
+        <item itemvalue="JUnit.TesteCampoTreinamento.deveInteragirComCombo" />
+        <item itemvalue="JUnit.TesteCampoTreinamento.deveInteragirComCheckBox" />
       </list>
     </recent_temporary>
   </component>
