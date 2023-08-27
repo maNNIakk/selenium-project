@@ -89,6 +89,27 @@ public class TesteCampoTreinamento {
 
     }
 
+    @Test
+    @Order(6)
+    public void deveInteragirComBotoes(){
+        WebElement botao = driver.findElement(By.id("buttonSimple"));
+        botao.click();
+        Assertions.assertEquals("Obrigado!",botao.getAttribute("value"));
+
+    }
+    @Test
+    @Order(7)
+    public void deveInteragirComLink(){
+        driver.findElement(By.linkText("Voltar")).click();
+        Assertions.assertEquals("Voltou!",
+                driver.findElement(By.id("resultado")).getText());
+        Assertions.assertTrue(driver.findElement(By.id("resultado"))
+                .getText().contains("Voltou!"));
+        Assertions.assertEquals("Cuidado onde clica, muitas armadilhas...",
+                driver.findElement(By.className("facilAchar")).getText());
+
+    }
+
     @AfterEach
     public void tearDown(){
          driver.quit();
