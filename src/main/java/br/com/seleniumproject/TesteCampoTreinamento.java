@@ -12,31 +12,30 @@ import java.util.List;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TesteCampoTreinamento {
     WebDriver driver = new FirefoxDriver();
+    DSL dsl;
     @BeforeEach
     public void setup(){
 
         driver.manage().window().maximize();
         driver.get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
-
+        dsl = new DSL(driver);
     }
 
     @Test
     @Order(0)
     public void testeTextField(){
-        driver.findElement(By.id("elementosForm:nome")).sendKeys("Xablau");
-        Assertions.assertEquals("Xablau",driver.findElement(By.id(
-                "elementosForm:nome")).getAttribute("value"));
+        dsl.escreve("elementosForm:nome","Xablau");
+        Assertions.assertEquals("Xablau",dsl.obterValorCampo("elementosForm:nome","value"));
 
     }
 
     @Test
     @Order(1)
     public void deveInteragirComTextArea(){
-        driver.findElement(By.id("elementosForm:sugestoes")).sendKeys("Xablau" +
-                " no textArea");
+        dsl.escreve("elementosForm:sugestoes","Xablau no textArea");
         Assertions.assertEquals("Xablau no textArea",
-                driver.findElement(By.id("elementosForm:sugestoes")).getAttribute("value"));
+                dsl.obterValorCampo("elementosForm:sugestoes","value"));
     }
 
     @Test
