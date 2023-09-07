@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4536249-bcc3-43df-b44b-f3525b947d73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "secao2",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;secao2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.TesteRegrasDeNegocio.validarNome">
+}</component>
+  <component name="RunManager" selected="JUnit.br.com.seleniumproject in selenium-project">
     <configuration name="TesteFormularioCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
@@ -106,6 +104,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="br.com.seleniumproject in selenium-project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.seleniumproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,8 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TesteRegrasDeNegocio.validarNome" />
+        <item itemvalue="JUnit.br.com.seleniumproject in selenium-project" />
         <item itemvalue="JUnit.TesteRegrasDeNegocio" />
+        <item itemvalue="JUnit.TesteRegrasDeNegocio.validarNome" />
         <item itemvalue="JUnit.TesteFormularioCompleto" />
       </list>
     </recent_temporary>
@@ -135,5 +148,16 @@
       <updated>1693838017030</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
