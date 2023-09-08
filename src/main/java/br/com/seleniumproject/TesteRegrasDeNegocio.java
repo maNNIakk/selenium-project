@@ -1,12 +1,10 @@
 package br.com.seleniumproject;
 
-import dev.failsafe.internal.util.Assert;
+import br.com.seleniumproject.PO.CampoTreinamentoPO;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -19,6 +17,8 @@ public class TesteRegrasDeNegocio {
     WebElement inputSobrenome,inputNome, inputSexoMasc, btnCadastrar,checkCarne,checkVegan,menuEsportes;
     String assertInput,alertText;
     Select opcoesEsportes;
+    private CampoTreinamentoPO campoTreinamento;
+    private DSL dsl;
 
 
     @BeforeAll
@@ -26,6 +26,9 @@ public class TesteRegrasDeNegocio {
         driver.manage().window().maximize();
         driver.get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
+        dsl = new DSL(driver);
+        campoTreinamento = new CampoTreinamentoPO(driver);
+
         btnCadastrar = driver.findElement(By.id("elementosForm:cadastrar"));
     }
 

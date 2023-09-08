@@ -16,7 +16,8 @@ public class TesteFormularioCompleto {
     String sobrenome = "Santos";
     String comidaFavorita = "frango";
     String escolaridade = "Mestrado";
-    String[] esportes  = {"natacao","Karate"};
+    String[] esportes  = {"Natacao","Karate"};
+    DSL dsl;
 
 
     WebDriver driver = new FirefoxDriver();
@@ -26,30 +27,21 @@ public class TesteFormularioCompleto {
         driver.manage().window().maximize();
         driver.get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
+        dsl = new DSL(driver);
     }
     @Test
     @Order(0)
     public void testeFormulario(){
         String xpath = String.format("//input[@value=\"%s\"]", comidaFavorita);
-        driver.findElement(By.id("elementosForm:nome")).sendKeys(nome);
-        driver.findElement(By.id("elementosForm:sobrenome")).sendKeys(sobrenome);
-        driver.findElement(By.id("elementosForm:sexo:0")).click();
+        dsl.escreve("elementosForm:nome",nome);
+        dsl.escreve("elementosForm:Sobrenome",sobrenome);
+        dsl.clicaRadio("elementosForm:sexo:0");
         driver.findElement(By.xpath(xpath)).click();
-        new Select(driver.findElement(By.id("elementosForm:escolaridade"))).selectByVisibleText(escolaridade);
-        WebElement element = driver.findElement(By.id("elementosForm" +
-                ":esportes"));
-        Select combo = new Select(element);
-        List<WebElement> opcoes = combo.getOptions();
-        for (WebElement opcao: opcoes ){
-            for (String esporte : esportes) {
-                if (opcao.getAttribute("value").equals(esporte)) {
-                    opcao.click();
-                }
-            }
-        }
-        driver.findElement(By.id("elementosForm:sugestoes")).sendKeys(
-                "Escrevendo na descrição da parada mané");
-        driver.findElement(By.id("elementosForm:cadastrar")).click();
+        dsl.selecionarCombo("elementosForm:escolaridade",escolaridade);
+        dsl.selecionarCombo("elementosForm" +
+                ":esportes",esportes[0]);
+
+        dsl.clicarBotao("elementosForm:cadastrar");
         WebElement statusCadastro =
                 driver.findElement(By.id("resultado"));
         Assertions.assertNotEquals("Status: Nao cadastrado",

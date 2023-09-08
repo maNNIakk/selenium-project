@@ -1,5 +1,6 @@
 package br.com.seleniumproject;
 
+import dev.failsafe.internal.util.Assert;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -41,48 +42,36 @@ public class TesteCampoTreinamento {
     @Test
     @Order(2)
     public void deveInteragirComRadio(){
-        driver.findElement(By.id("elementosForm:sexo:0")).click();
-        Assertions.assertTrue(driver.findElement(By.id("elementosForm:sexo:0")).isSelected());
+        dsl.clicaRadio("elementosForm:sexo:0");
+        Assertions.assertTrue(dsl.isRadioMarcado("elementosForm:sexo:0"));
     }
 
     @Test
     @Order(3)
     public void deveInteragirComCheckBox(){
-        driver.findElement(By.id("elementosForm:comidaFavorita:2")).click();
-        Assertions.assertTrue(driver.findElement(By.id("elementosForm" +
-                ":comidaFavorita:2")).isSelected());
+        dsl.clicaRadio("elementosForm:comidaFavorita:2");
+        Assertions.assertTrue(dsl.isRadioMarcado("elementosForm" +
+                ":comidaFavorita:2"));
     }
 
     @Test
     @Order(4)
     public void deveValoresCombo(){
-        WebElement element = driver.findElement(By.id("elementosForm" +
+        dsl.selecionarCombo("elementosForm" +
+                ":escolaridade","Mestrado");
+        Assertions.assertEquals("Mestrado", dsl.obterValorCombo("elementosForm" +
                 ":escolaridade"));
-        Select combo = new Select(element);
-        List<WebElement> options = combo.getOptions();
-        Assertions.assertEquals(8,options.size());
-
-        boolean encontrou = false;
-        for(WebElement option: options) {
-            if(option.getText().equals("Mestrado")){
-                encontrou = true;
-                break;
-            }
-        }
-        Assertions.assertTrue(encontrou);
 
     }
 
     @Test
     @Order(5)
     public void valoresMultiCombo(){
+        dsl.selecionarCombo("elementosForm:esportes","Natacao");
+        dsl.selecionarCombo("elementosForm:esportes","Corrida");
+        dsl.selecionarCombo("elementosForm:esportes","O que eh esporte?");
         WebElement element = driver.findElement(By.id("elementosForm:esportes"));
         Select combo = new Select(element);
-
-        combo.selectByVisibleText("Natacao");
-        combo.selectByVisibleText("Corrida");
-        combo.selectByVisibleText("O que eh esporte?");
-
         List<WebElement> allSelectedOptions = combo.getAllSelectedOptions();
         Assertions.assertEquals(3, allSelectedOptions.size());
 
@@ -91,22 +80,20 @@ public class TesteCampoTreinamento {
     @Test
     @Order(6)
     public void deveInteragirComBotoes(){
+        dsl.clicarBotao("buttonSimple");
         WebElement botao = driver.findElement(By.id("buttonSimple"));
-        botao.click();
         Assertions.assertEquals("Obrigado!",botao.getAttribute("value"));
 
     }
     @Test
     @Order(7)
     public void deveInteragirComLink(){
-        driver.findElement(By.linkText("Voltar")).click();
+        dsl.clicarLink("Voltar");
         Assertions.assertEquals("Voltou!",
-                driver.findElement(By.id("resultado")).getText());
-        Assertions.assertTrue(driver.findElement(By.id("resultado"))
-                .getText().contains("Voltou!"));
+                dsl.obterTexto("resultado"));
+        Assertions.assertTrue(dsl.obterTexto("resultado").contains("Voltou!"));
         Assertions.assertEquals("Cuidado onde clica, muitas armadilhas...",
-                driver.findElement(By.className("facilAchar")).getText());
-
+        dsl.obterTexto(By.className("facilAchar")));
     }
 
     @AfterEach
