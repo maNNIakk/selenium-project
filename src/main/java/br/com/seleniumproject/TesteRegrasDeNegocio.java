@@ -15,26 +15,26 @@ public class TesteRegrasDeNegocio {
     Alert alert = null;
 
     WebElement inputSobrenome,inputNome, inputSexoMasc, btnCadastrar,checkCarne,checkVegan,menuEsportes;
-    String assertInput,alertText;
+    String assertInput,
+            alertText;
     Select opcoesEsportes;
-    private CampoTreinamentoPO campoTreinamento;
-    private DSL dsl;
-
 
     @BeforeAll
     public void setup(){
+
+
         driver.manage().window().maximize();
         driver.get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
-        dsl = new DSL(driver);
-        campoTreinamento = new CampoTreinamentoPO(driver);
 
         btnCadastrar = driver.findElement(By.id("elementosForm:cadastrar"));
     }
 
+
     @Test
     @Order(0)
     public void validarNome(){
+
         inputNome = driver.findElement(By.id("elementosForm:nome"));
         assertInput = inputNome.getAttribute("value");
         Assertions.assertTrue(assertInput.isEmpty());

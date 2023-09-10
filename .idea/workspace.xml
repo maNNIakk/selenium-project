@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4536249-bcc3-43df-b44b-f3525b947d73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/PO/CampoTreinamentoPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedSeleniumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/SecaoOrganizacaoCodigo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/secao5/locatorsAvancados/TestesSecao5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/DSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/DSL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,15 +56,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "secao4",
     "ignore.virus.scanning.warn.message": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ParameterizedSeleniumTest.setUp">
+  <component name="RunManager" selected="JUnit.ParameterizedTests.maisTesteComIFrame">
+    <configuration name="All in selenium-project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParameterizedSeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
@@ -101,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParametrizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParameterizedTests.maisTesteComIFrame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.seleniumproject.Tests" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.Tests.ParametrizedTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.Tests.ParameterizedTests" />
+      <option name="METHOD_NAME" value="maisTesteComIFrame" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecaoOrganizacaoCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParameterizedTests.testJavascript" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
@@ -125,23 +129,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.seleniumproject.Tests" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.Tests.SecaoOrganizacaoCodigo" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SecaoOrganizacaoCodigo.utilizandoPageObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.Tests" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.Tests.SecaoOrganizacaoCodigo" />
-      <option name="METHOD_NAME" value="utilizandoPageObjects" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.Tests.ParameterizedTests" />
+      <option name="METHOD_NAME" value="testJavascript" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParameterizedTests.maisTesteComIFrame" />
+        <item itemvalue="JUnit.ParameterizedTests.testJavascript" />
+        <item itemvalue="JUnit.All in selenium-project" />
         <item itemvalue="JUnit.ParameterizedSeleniumTest.setUp" />
         <item itemvalue="JUnit.ParameterizedSeleniumTest" />
-        <item itemvalue="JUnit.ParametrizedTest" />
-        <item itemvalue="JUnit.SecaoOrganizacaoCodigo" />
-        <item itemvalue="JUnit.SecaoOrganizacaoCodigo.utilizandoPageObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -179,24 +168,8 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedSeleniumTest.java</url>
-          <line>51</line>
-          <properties class="br.com.seleniumproject.Tests.ParameterizedSeleniumTest" method="testSearch">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedSeleniumTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
