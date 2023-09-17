@@ -1,0 +1,15 @@
+
+n
+java:S1192$"SDefine a constant instead of duplicating this literal "elementosForm:nome" 3 times.(Îëİ¸ûÿÿÿÿ
+@	java:S106P"+Replace this use of System.out by a logger.(ĞÅ˜é
+E	java:S106Y"+Replace this use of System.out by a logger.(Şô«Áûÿÿÿÿ
+@	java:S106Z"+Replace this use of System.out by a logger.(şÉşŒ
+@	java:S106\"+Replace this use of System.out by a logger.(ò‰û
+]
+java:S1128	"BRemove this unused import 'org.openqa.selenium.support.ui.Select'.(´—âÛøÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+F
+java:S5960/"+Remove this assertion from production code.(ÒŒ³ìşÿÿÿÿ

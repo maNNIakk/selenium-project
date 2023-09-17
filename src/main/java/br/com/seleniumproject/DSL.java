@@ -1,9 +1,8 @@
 package br.com.seleniumproject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import dev.failsafe.internal.util.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 
 public class DSL {
@@ -62,5 +61,30 @@ public class DSL {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         return js.executeScript(cmd,param);
+    }
+
+    public void selecionarBotaoTabelaPeloNome(String nome, String tipoInput, String... texto){
+        String xpath = String.format("//table[@id=\"elementosForm:tableUsuarios\"]/tbody/tr//td[1][contains(text(),'%s')]//..//td//input[@type=\"%s\"]",nome,tipoInput);
+        WebElement element = driver.findElement(By.xpath(xpath));
+
+        if (tipoInput == "button"){
+        element.click();
+        Alert alert = driver.switchTo().alert();
+        Assertions.assertEquals(nome,alert.getText());
+        } else if (tipoInput == "checkbox" || tipoInput == "radio" ){
+            element.click();
+            Assertions.assertTrue(driver.findElement(By.xpath(xpath)).isSelected());
+        }
+        else {
+            if(texto.length > 0){
+                for (String text : texto){
+                    element.sendKeys(text);
+                    String inputValue = element.getAttribute("value");
+                    System.out.println(element.getText());
+                    Assertions.assertEquals(inputValue,text);
+                }
+            }
+        }
+        System.out.println(xpath);
     }
 }
