@@ -1,6 +1,0 @@
-
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş²âì8ªş·Ÿª1
-
-java:S1450"_Remove the "campoTreinamento" field and declare it as a local variable in the relevant methods.(Š˜¶›øÿÿÿÿ8¯ş·Ÿª1
-V
-java:S1068"4Remove this unused "campoTreinamento" private field.(Š˜¶›øÿÿÿÿ8¶ş·Ÿª1

@@ -1,0 +1,13 @@
+
+g
+java:S1192:"JDefine a constant instead of duplicating this literal "novoCampo" 4 times.(žÏ›±8Ê„ô¨ª1
+i
+java:S11928"LDefine a constant instead of duplicating this literal "buttonDelay" 3 times.(èØ“¦8Ê„ô¨ª1
+f
+java:S1192:"IDefine a constant instead of duplicating this literal "Funfou?!" 3 times.(žÏ›±8Ê„ô¨ª1
+£
+java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³¥‚Ÿýÿÿÿÿ8³²˜©ª1
+X
+java:S1874@"6Remove this use of "implicitlyWait"; it is deprecated.(ÓÉŒÏþÿÿÿÿ8Þ„ô¨ª1
+X
+java:S1874C"6Remove this use of "implicitlyWait"; it is deprecated.(ý°ªÓùÿÿÿÿ8Þ„ô¨ª1

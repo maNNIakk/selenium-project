@@ -13,7 +13,9 @@ o
 ?src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java,6\2\628a07344b5e82d6d651f8d4775b0b87f80e9eb1
 n
 >src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java,c\9\c97346fd5f9497e6a387cbc15b31792552a21da1
-
-Osrc/main/java/br/com/seleniumproject/secao5/locatorsAvancados/TestesSecao5.java,a\d\adc477accfecf9b21a394500a825f97df0d07d32
 e
 5src/main/java/br/com/seleniumproject/TesteGoogle.java,8\8\8842beb39d1b75411ff131a8dd01e66575319499
+u
+Esrc/main/java/br/com/seleniumproject/secao5/TestesComSincronismo.java,6\d\6d428e76337ba994aeafd844fbe48ef354fa39b2
+n
+>src/main/java/br/com/seleniumproject/secao5/TestesComAjax.java,d\2\d28147c5959082c2870c82acb79ac81e1f79db7c
