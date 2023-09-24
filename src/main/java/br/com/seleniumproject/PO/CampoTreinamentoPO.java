@@ -1,24 +1,18 @@
 package br.com.seleniumproject.PO;
 
-import br.com.seleniumproject.DSL;
+import br.com.seleniumproject.core.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
-public class CampoTreinamentoPO {
+import static br.com.seleniumproject.core.DriverFactory.getDriver;
 
-    private DSL dsl;
-    private WebDriver driver;
+public class CampoTreinamentoPO extends BasePage {
 
-    public CampoTreinamentoPO(WebDriver driver) {
-        dsl = new DSL(driver);
-        this.driver = driver;
 
-    }
-
-    public void setNome(String nome){
+    public void setNome(String nome) {
         dsl.escreve("elementosForm:nome", nome);
     }
-    public void setSobrenome(String sobreNome){
+
+    public void setSobrenome(String sobreNome) {
         dsl.escreve("elementosForm:sobrenome", sobreNome);
     }
 
@@ -27,22 +21,22 @@ public class CampoTreinamentoPO {
         String radioButtonXPath = String.format("//input[@type='radio' and @value='%s']", sexo);
 
         // Find and click the radio button
-        driver.findElement(By.xpath(radioButtonXPath)).click();
+        getDriver().findElement(By.xpath(radioButtonXPath)).click();
     }
 
-    public void setComidaFavorita(String comidaFavorita){
+    public void setComidaFavorita(String comidaFavorita) {
         String radioButtonXPath = String.format("//input[@type='checkbox' and @value='%s']", comidaFavorita);
 
         // Find and click the radio button
-        driver.findElement(By.xpath(radioButtonXPath)).click();
+        getDriver().findElement(By.xpath(radioButtonXPath)).click();
     }
 
-    public void setEscolaridade(String escolaridade){
-        dsl.selecionarCombo("elementosForm:escolaridade",escolaridade);
+    public void setEscolaridade(String escolaridade) {
+        dsl.selecionarCombo("elementosForm:escolaridade", escolaridade);
     }
 
-    public void setTextoObservacao(String observacao){
-        dsl.escreve("elementosForm:sugestoes",observacao);
+    public void setTextoObservacao(String observacao) {
+        dsl.escreve("elementosForm:sugestoes", observacao);
     }
 
 

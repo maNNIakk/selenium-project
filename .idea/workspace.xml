@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4536249-bcc3-43df-b44b-f3525b947d73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/adc477accfecf9b21a394500a825f97df0d07d32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/d/adc477accfecf9b21a394500a825f97df0d07d32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DSL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/Propriedades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteFormularioCompleto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TestesComSincronismo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/DSL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/PO/CampoTreinamentoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/PO/CampoTreinamentoPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteCampoTreinamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteGoogle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteGoogle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteRegrasDeNegocio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedSeleniumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/ParameterizedTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/SecaoOrganizacaoCodigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/SecaoOrganizacaoCodigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/secao5/TestesComAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TestesComAjax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/secao5/TestesComSincronismo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/componentes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/componentes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,94 +68,90 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;secao6&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "secao7",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TestesComAjax.testeSimplesComAjax">
-    <configuration name="TestesComAjax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.br.com.seleniumproject in selenium-project">
+    <configuration name="ParameterizedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.secao5.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.secao5" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.secao5.TestesComAjax" />
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.ParameterizedTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestesComAjax.testeSimplesComAjax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParameterizedTests.utilizandoPageObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.secao5.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.secao5" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.secao5.TestesComAjax" />
-      <option name="METHOD_NAME" value="testeSimplesComAjax" />
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.ParameterizedTests" />
+      <option name="METHOD_NAME" value="utilizandoPageObjects(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestesComSincronismo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesteFormularioCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.secao5.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.secao5" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.secao5.TestesComSincronismo" />
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject.tests" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.TesteFormularioCompleto" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestesComSincronismo.testeSincronismo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="br in selenium-project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.secao5.*" />
+          <option name="PATTERN" value="br.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.secao5" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.secao5.TestesComSincronismo" />
-      <option name="METHOD_NAME" value="testeSincronismo" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="br" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestesComSincronismo.testeSincronismoExplicito" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.seleniumproject in selenium-project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.secao5.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.seleniumproject.secao5" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.secao5.TestesComSincronismo" />
-      <option name="METHOD_NAME" value="testeSincronismoExplicito" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="br.com.seleniumproject" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestesComAjax.testeSimplesComAjax" />
-        <item itemvalue="JUnit.TestesComAjax" />
-        <item itemvalue="JUnit.TestesComSincronismo.testeSincronismoExplicito" />
-        <item itemvalue="JUnit.TestesComSincronismo" />
-        <item itemvalue="JUnit.TestesComSincronismo.testeSincronismo" />
+        <item itemvalue="JUnit.br.com.seleniumproject in selenium-project" />
+        <item itemvalue="JUnit.br in selenium-project" />
+        <item itemvalue="JUnit.ParameterizedTests" />
+        <item itemvalue="JUnit.ParameterizedTests.utilizandoPageObjects" />
+        <item itemvalue="JUnit.TesteFormularioCompleto" />
       </list>
     </recent_temporary>
   </component>

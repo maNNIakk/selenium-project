@@ -1,6 +1,6 @@
-package br.com.seleniumproject;
+package br.com.seleniumproject.tests;
 
-import br.com.seleniumproject.PO.CampoTreinamentoPO;
+import br.com.seleniumproject.core.BaseTest;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,18 +9,18 @@ import org.openqa.selenium.support.ui.Select;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TesteRegrasDeNegocio {
+public class TesteRegrasDeNegocio extends BaseTest {
 
     WebDriver driver = new FirefoxDriver();
     Alert alert = null;
 
-    WebElement inputSobrenome,inputNome, inputSexoMasc, btnCadastrar,checkCarne,checkVegan,menuEsportes;
+    WebElement inputSobrenome, inputNome, inputSexoMasc, btnCadastrar, checkCarne, checkVegan, menuEsportes;
     String assertInput,
             alertText;
     Select opcoesEsportes;
 
     @BeforeAll
-    public void setup(){
+    public void setup() {
 
 
         driver.manage().window().maximize();
@@ -33,7 +33,7 @@ public class TesteRegrasDeNegocio {
 
     @Test
     @Order(0)
-    public void validarNome(){
+    public void validarNome() {
 
         inputNome = driver.findElement(By.id("elementosForm:nome"));
         assertInput = inputNome.getAttribute("value");
@@ -41,35 +41,35 @@ public class TesteRegrasDeNegocio {
         btnCadastrar.click();
         alert = driver.switchTo().alert();
         alertText = alert.getText();
-        Assertions.assertEquals(alertText,"Nome eh obrigatorio");
+        Assertions.assertEquals(alertText, "Nome eh obrigatorio");
         alert.dismiss();
 
     }
 
     @Test
     @Order(1)
-    public void validarSobrenome(){
+    public void validarSobrenome() {
 
         inputNome.sendKeys("Renatão");
         assertInput = inputNome.getAttribute("value");
-        Assertions.assertEquals(assertInput,"Renatão");
+        Assertions.assertEquals(assertInput, "Renatão");
 
         inputSobrenome = driver.findElement(By.id("elementosForm:sobrenome"));
         Assertions.assertTrue(inputSobrenome.getAttribute("value").isEmpty());
         btnCadastrar.click();
         alert = driver.switchTo().alert();
         alertText = alert.getText();
-        Assertions.assertEquals(alertText,"Sobrenome eh obrigatorio");
+        Assertions.assertEquals(alertText, "Sobrenome eh obrigatorio");
         alert.dismiss();
 
     }
 
     @Test
     @Order(2)
-    public void validarSexo(){
+    public void validarSexo() {
         inputSobrenome.sendKeys("Dos Santão");
         assertInput = inputSobrenome.getAttribute("value");
-        Assertions.assertEquals(assertInput,"Dos Santão");
+        Assertions.assertEquals(assertInput, "Dos Santão");
 
         inputSexoMasc = driver.findElement(By.id("elementosForm:sexo:1"));
         Assertions.assertFalse(inputSexoMasc.isSelected());
@@ -77,14 +77,14 @@ public class TesteRegrasDeNegocio {
 
         alert = driver.switchTo().alert();
         alertText = alert.getText();
-        Assertions.assertEquals(alertText,"Sexo eh obrigatorio");
+        Assertions.assertEquals(alertText, "Sexo eh obrigatorio");
         alert.dismiss();
 
     }
 
     @Test
     @Order(3)
-    public void validarVeganoOuCarnivoro(){
+    public void validarVeganoOuCarnivoro() {
         inputSexoMasc.click();
         Assertions.assertTrue(inputSexoMasc.isSelected());
         checkCarne = driver.findElement(By.cssSelector("[value=\"carne\"]"));
@@ -93,23 +93,22 @@ public class TesteRegrasDeNegocio {
         checkCarne.click();
         checkVegan.click();
 
-        if (checkCarne.isSelected() && checkVegan.isSelected()){
+        if (checkCarne.isSelected() && checkVegan.isSelected()) {
             btnCadastrar.click();
             alert = driver.switchTo().alert();
             alertText = alert.getText();
-            Assertions.assertEquals(alertText,"Tem certeza que voce eh vegetariano?");
+            Assertions.assertEquals(alertText, "Tem certeza que voce eh vegetariano?");
             alert.dismiss();
             checkVegan.click();
             Assertions.assertFalse(checkVegan.isSelected());
-        }
-        else{
+        } else {
             throw new InvalidArgumentException("Oxi Deu Errado");
         }
     }
 
     @Test
     @Order(4)
-    public void validarMenuEsportes(){
+    public void validarMenuEsportes() {
         menuEsportes = driver.findElement(By.id("elementosForm:esportes"));
         opcoesEsportes = new Select(menuEsportes);
         opcoesEsportes.selectByValue("futebol");
@@ -122,13 +121,13 @@ public class TesteRegrasDeNegocio {
         alert.dismiss();
 
         opcoesEsportes.deselectByValue("nada");
-        Assertions.assertEquals(opcoesEsportes.getFirstSelectedOption().getAttribute("value"),"futebol");
+        Assertions.assertEquals(opcoesEsportes.getFirstSelectedOption().getAttribute("value"), "futebol");
 
     }
 
     @Test
     @Order(5)
-    public void validarCadastroPreenchido(){
+    public void validarCadastroPreenchido() {
         btnCadastrar.click();
         WebElement statusCadastro =
                 driver.findElement(By.id("resultado"));
@@ -138,10 +137,4 @@ public class TesteRegrasDeNegocio {
 
 
     }
-
-    @AfterAll
-    public void tearDown(){
-        driver.quit();
-    }
-
 }
