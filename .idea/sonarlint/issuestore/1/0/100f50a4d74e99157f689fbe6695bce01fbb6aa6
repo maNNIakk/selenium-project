@@ -1,6 +1,0 @@
-
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îÏ•5
-m
-java:S1450"RRemove the "dsl" field and declare it as a local variable in the relevant methods.(×ü–Ìüÿÿÿÿ
-B
-java:S1068"'Remove this unused "dsl" private field.(×ü–Ìüÿÿÿÿ

@@ -5,11 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static br.com.seleniumproject.core.DriverFactory.getDriver;
-import static br.com.seleniumproject.core.DriverFactory.killDriver;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TesteGoogle extends BaseTest {

@@ -2,16 +2,20 @@ package br.com.seleniumproject.tests;
 
 import br.com.seleniumproject.core.BaseTest;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.InvalidArgumentException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import static br.com.seleniumproject.core.DriverFactory.getDriver;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TesteRegrasDeNegocio extends BaseTest {
 
-    WebDriver driver = new FirefoxDriver();
+   
     Alert alert = null;
 
     WebElement inputSobrenome, inputNome, inputSexoMasc, btnCadastrar, checkCarne, checkVegan, menuEsportes;
@@ -23,11 +27,10 @@ public class TesteRegrasDeNegocio extends BaseTest {
     public void setup() {
 
 
-        driver.manage().window().maximize();
-        driver.get("file:///" + System.getProperty("user.dir") + "/src/main" +
+        getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
 
-        btnCadastrar = driver.findElement(By.id("elementosForm:cadastrar"));
+        btnCadastrar = getDriver().findElement(By.id("elementosForm:cadastrar"));
     }
 
 
@@ -35,11 +38,11 @@ public class TesteRegrasDeNegocio extends BaseTest {
     @Order(0)
     public void validarNome() {
 
-        inputNome = driver.findElement(By.id("elementosForm:nome"));
+        inputNome = getDriver().findElement(By.id("elementosForm:nome"));
         assertInput = inputNome.getAttribute("value");
         Assertions.assertTrue(assertInput.isEmpty());
         btnCadastrar.click();
-        alert = driver.switchTo().alert();
+        alert = getDriver().switchTo().alert();
         alertText = alert.getText();
         Assertions.assertEquals(alertText, "Nome eh obrigatorio");
         alert.dismiss();
@@ -54,10 +57,10 @@ public class TesteRegrasDeNegocio extends BaseTest {
         assertInput = inputNome.getAttribute("value");
         Assertions.assertEquals(assertInput, "Renatão");
 
-        inputSobrenome = driver.findElement(By.id("elementosForm:sobrenome"));
+        inputSobrenome = getDriver().findElement(By.id("elementosForm:sobrenome"));
         Assertions.assertTrue(inputSobrenome.getAttribute("value").isEmpty());
         btnCadastrar.click();
-        alert = driver.switchTo().alert();
+        alert = getDriver().switchTo().alert();
         alertText = alert.getText();
         Assertions.assertEquals(alertText, "Sobrenome eh obrigatorio");
         alert.dismiss();
@@ -71,11 +74,11 @@ public class TesteRegrasDeNegocio extends BaseTest {
         assertInput = inputSobrenome.getAttribute("value");
         Assertions.assertEquals(assertInput, "Dos Santão");
 
-        inputSexoMasc = driver.findElement(By.id("elementosForm:sexo:1"));
+        inputSexoMasc = getDriver().findElement(By.id("elementosForm:sexo:1"));
         Assertions.assertFalse(inputSexoMasc.isSelected());
         btnCadastrar.click();
 
-        alert = driver.switchTo().alert();
+        alert = getDriver().switchTo().alert();
         alertText = alert.getText();
         Assertions.assertEquals(alertText, "Sexo eh obrigatorio");
         alert.dismiss();
@@ -87,15 +90,15 @@ public class TesteRegrasDeNegocio extends BaseTest {
     public void validarVeganoOuCarnivoro() {
         inputSexoMasc.click();
         Assertions.assertTrue(inputSexoMasc.isSelected());
-        checkCarne = driver.findElement(By.cssSelector("[value=\"carne\"]"));
-        checkVegan = driver.findElement(By.cssSelector("[value=\"vegetariano\"]"));
+        checkCarne = getDriver().findElement(By.cssSelector("[value=\"carne\"]"));
+        checkVegan = getDriver().findElement(By.cssSelector("[value=\"vegetariano\"]"));
 
         checkCarne.click();
         checkVegan.click();
 
         if (checkCarne.isSelected() && checkVegan.isSelected()) {
             btnCadastrar.click();
-            alert = driver.switchTo().alert();
+            alert = getDriver().switchTo().alert();
             alertText = alert.getText();
             Assertions.assertEquals(alertText, "Tem certeza que voce eh vegetariano?");
             alert.dismiss();
@@ -109,13 +112,13 @@ public class TesteRegrasDeNegocio extends BaseTest {
     @Test
     @Order(4)
     public void validarMenuEsportes() {
-        menuEsportes = driver.findElement(By.id("elementosForm:esportes"));
+        menuEsportes = getDriver().findElement(By.id("elementosForm:esportes"));
         opcoesEsportes = new Select(menuEsportes);
         opcoesEsportes.selectByValue("futebol");
         opcoesEsportes.selectByValue("nada");
 
         btnCadastrar.click();
-        alert = driver.switchTo().alert();
+        alert = getDriver().switchTo().alert();
         alertText = alert.getText();
         Assertions.assertEquals(alertText, "Voce faz esporte ou nao?");
         alert.dismiss();
@@ -130,7 +133,7 @@ public class TesteRegrasDeNegocio extends BaseTest {
     public void validarCadastroPreenchido() {
         btnCadastrar.click();
         WebElement statusCadastro =
-                driver.findElement(By.id("resultado"));
+                getDriver().findElement(By.id("resultado"));
         Assertions.assertNotEquals("Status: Nao cadastrado",
                 statusCadastro.getText());
         Assertions.assertTrue(statusCadastro.getText().startsWith("Cadastrado!"));

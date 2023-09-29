@@ -71,6 +71,7 @@ public class DSL {
             element.click();
             Alert alert = getDriver().switchTo().alert();
             Assertions.assertEquals(nome, alert.getText());
+            alert.dismiss();
         } else if (tipoInput == "checkbox" || tipoInput == "radio") {
             element.click();
             Assertions.assertTrue(getDriver().findElement(By.xpath(xpath)).isSelected());
@@ -84,6 +85,7 @@ public class DSL {
                 }
             }
         }
+
         System.out.println(xpath);
     }
 }

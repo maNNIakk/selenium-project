@@ -1,5 +1,6 @@
 package br.com.seleniumproject.core;
 
 public class Propriedades {
-    public static boolean FECHAR_BROWSER = false;
+    //E no caso de false, ele fecha o browser por classe de teste
+    public static boolean FECHAR_BROWSER_POR_TESTE = false;
 }

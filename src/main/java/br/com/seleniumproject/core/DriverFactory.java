@@ -3,6 +3,8 @@ package br.com.seleniumproject.core;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class DriverFactory {
     private static WebDriver driver;
 

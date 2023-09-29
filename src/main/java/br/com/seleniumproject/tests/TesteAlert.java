@@ -4,8 +4,8 @@ import br.com.seleniumproject.core.BaseTest;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.concurrent.TimeUnit;
 
 import static br.com.seleniumproject.core.DriverFactory.getDriver;
 
@@ -18,7 +18,6 @@ public class TesteAlert extends BaseTest {
 
     @BeforeEach
     public void setup() {
-        
         getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main" +
                 "/resources/componentes.html");
     }
@@ -44,8 +43,10 @@ public class TesteAlert extends BaseTest {
         getDriver().findElement(By.id("confirm")).click();
         alert = getDriver().switchTo().alert();
         alert.accept();
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         texto = alert.getText();
         Assertions.assertEquals("Confirmado", texto);
+        alert.dismiss();
     }
 
     @Test
@@ -54,8 +55,10 @@ public class TesteAlert extends BaseTest {
         getDriver().findElement(By.id("confirm")).click();
         alert = getDriver().switchTo().alert();
         alert.dismiss();
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         texto = alert.getText();
         Assertions.assertEquals("Negado", texto);
+        alert.dismiss();
     }
 
     @Test
@@ -68,12 +71,14 @@ public class TesteAlert extends BaseTest {
         String numero = "21";
         alert.sendKeys(numero);
         alert.accept();
+        getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         texto = alert.getText();
         if (texto.contains(numero)) {
             alert.accept();
+            getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             texto = alert.getText();
             Assertions.assertEquals(":D", texto);
         } else Assertions.fail();
-
+        alert.dismiss();
     }
 }

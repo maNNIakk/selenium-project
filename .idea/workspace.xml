@@ -5,28 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4536249-bcc3-43df-b44b-f3525b947d73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DSL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/Propriedades.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteFormularioCompleto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TestesComSincronismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/100f50a4d74e99157f689fbe6695bce01fbb6aa6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12c0da66d0f02b5145c2c5d9e7ae5369f5202817" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5db4e175230bbd0a87a8b76eabb2caf1d8a2caba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/628a07344b5e82d6d651f8d4775b0b87f80e9eb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d428e76337ba994aeafd844fbe48ef354fa39b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8842beb39d1b75411ff131a8dd01e66575319499" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c97346fd5f9497e6a387cbc15b31792552a21da1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d28147c5959082c2870c82acb79ac81e1f79db7c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d432a025c6f2ad4ffce7d6d998574cd94674910e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee460ed94caf7343e94875270de87c6c69dc7f44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/2/12c0da66d0f02b5145c2c5d9e7ae5369f5202817" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/2/628a07344b5e82d6d651f8d4775b0b87f80e9eb1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/d/6d428e76337ba994aeafd844fbe48ef354fa39b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/8842beb39d1b75411ff131a8dd01e66575319499" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c97346fd5f9497e6a387cbc15b31792552a21da1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d28147c5959082c2870c82acb79ac81e1f79db7c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/4/d432a025c6f2ad4ffce7d6d998574cd94674910e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee460ed94caf7343e94875270de87c6c69dc7f44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/DSL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/PO/CampoTreinamentoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/PO/CampoTreinamentoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteAlert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteCampoTreinamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteCampoTreinamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteFormularioCompleto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteGoogle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteGoogle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/TesteRegrasDeNegocio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteRegrasDeNegocio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedSeleniumTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/ParameterizedTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/ParameterizedTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/Tests/SecaoOrganizacaoCodigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/SecaoOrganizacaoCodigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/secao5/TestesComAjax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TestesComAjax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/secao5/TestesComSincronismo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/componentes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/componentes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/Propriedades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/core/Propriedades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteGoogle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteGoogle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteRegrasDeNegocio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/seleniumproject/tests/TesteRegrasDeNegocio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +75,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "secao7",
-    "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;secao7&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.br.com.seleniumproject in selenium-project">
     <configuration name="ParameterizedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
@@ -97,33 +104,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterizedTests.utilizandoPageObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesteAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.seleniumproject.tests" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.ParameterizedTests" />
-      <option name="METHOD_NAME" value="utilizandoPageObjects(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.TesteAlert" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteFormularioCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesteAlert.deveRecusarAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.seleniumproject.core.*" />
+          <option name="PATTERN" value="br.com.seleniumproject.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.seleniumproject.tests" />
-      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.TesteFormularioCompleto" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="br.com.seleniumproject.tests.TesteAlert" />
+      <option name="METHOD_NAME" value="deveRecusarAlert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.br.com.seleniumproject in selenium-project" />
+        <item itemvalue="JUnit.TesteAlert" />
+        <item itemvalue="JUnit.TesteAlert.deveRecusarAlert" />
         <item itemvalue="JUnit.br in selenium-project" />
         <item itemvalue="JUnit.ParameterizedTests" />
-        <item itemvalue="JUnit.ParameterizedTests.utilizandoPageObjects" />
-        <item itemvalue="JUnit.TesteFormularioCompleto" />
       </list>
     </recent_temporary>
   </component>
